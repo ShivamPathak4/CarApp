@@ -4,7 +4,5 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import { thunk } from "redux-thunk";
 
 const rootReducer = combineReducers({ loginReducer, modalReducer });
-
 const middleWare = [thunk];
-
 export const Store = legacy_createStore(rootReducer, applyMiddleware(thunk));

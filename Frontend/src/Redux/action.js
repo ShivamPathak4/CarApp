@@ -1,18 +1,18 @@
-import { isLogin, isModal } from "./actionType"
+import { isLogin, isModal, SET_SEARCH_RESULTS } from "./actionType";
 
-  const login=(payload)=>{
-return {
-    type:isLogin,
-    payload
-}
- }
+const login = (payload) => ({
+  type: isLogin,
+  payload,
+});
 
- const setModalOpen=(payload)=>{
-    return {
-        type:isModal,
-        payload
-    }
- }
+const setModalOpen = (payload) => ({
+  type: isModal,
+  payload,
+});
 
- export {login,setModalOpen}
- 
+const setSearchResults = (payload) => ({
+  type: SET_SEARCH_RESULTS,
+  payload,
+});
+
+export { login, setModalOpen, setSearchResults };
